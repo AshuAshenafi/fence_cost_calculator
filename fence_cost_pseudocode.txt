@@ -1,0 +1,65 @@
+/*
+* This program takes perimeter of fence and number of gates as input, processes
+* and gives fence installation cost
+*/
+
+
+
+1.	Start																
+2.	//INPUT																
+3.	Initialize fence perimeter																
+4.	Initialize chain-link length with is equal to the fence perimeter																
+5.	Initialize number of gates																
+6.																	
+7.	Initialize wooden fencing cost per foot= $25.00																
+8.	Initialize chain link fence cost per foot = $15.00																
+9.	Initialize gate cost = $150.00																
+10.	Initialize building permit cost = $50.00																
+11.	Initialize tax rate = 6%																
+12.																	
+13.	Initialize total sum of taxable items																
+14.	Initialize tax amount																
+15.	Initialize total fence installing cost																
+16.	Initialize Loop control																
+17.																	
+18.																	
+19.	DOWHILE																
+20.	Prompt user to enter fence perimeter																
+21.		IF[fence perimeter is less than zero]															
+22.			invalid input														
+23.		ELSE															
+24.			control is false														
+25.		END IF															
+26.	END-DO																
+27.																	
+28.	DOWHILE																
+29.	Prompt user to enter number of gates																
+30.		IF[number of gates is less than zero]															
+31.			invalid input														
+32.		ELSE IF [number of gates is greater than three]															
+33.			gates shall not be greater than four														
+34.		ELSE 															
+35.			Loop control is false														
+36.		END IF															
+37.	END-DO																
+38.																	
+39.	//PROCESS																
+40.	chain-link lenth is equal to fence perimeter																
+41.	wooden fence cost = fence perimeter times wooden fence cost per foot																
+42.	chain link cost = chain link length * chain link cost per foot																
+43.	gates cost = number of gates times gate cost																
+44.	sum of taxable cost = wooden fence cost + chain link cost + gates cost																
+45.	tax amount = sum of taxable cost * tax rate																
+46.	total fence installing cost = sum of taxable cost + tax amount + building permit cost																
+47.																	
+48.	//OUTPUT																
+49.	print table head with ITEM, DESCRIPTION, UNIT, RATE, QUANTITY, TOTAL AMOUNT																
+50.	print item number to each item																
+51.	print sum of taxable cost																
+52.	print tax amount																
+53.	print building permit cost																
+54.	print total fence installing cost																
+55.	end																
+																	
+																	
+																	
